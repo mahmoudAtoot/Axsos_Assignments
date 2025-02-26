@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration Form</title>
+        <link rel="stylesheet" href="atoot.css">
+    </head>
+    <body>
+        <h2>Registration Form</h2>
+        <form action="/pagefile.sys" method="post">
+            <!-- div name--> 
+            <div">
+                <label class="fname" for="First-name">First Name: *</label>
+                <input type="text" name="First_name" id="First-name">
+                <br>
+                <label for="Last-name">Last Name: *</label>
+                <input type="text" name="Last_name" id="Last-name">
+                <br>
+            </div>
+            <!-- div Email Address--> 
+            <div>
+                <label for="email">Email Address: *</label>
+                <input type="text" name="email" id="email">
+                <br>
+            </div>
+            <!-- div Password--> 
+            <div>
+                <label for="password">Password: *</label>
+                <input type="password" name="password" id="password">
+                <br>
+                 <label for="confirm-password">Confirm Password: *</label>
+                 <input type="password" name="confirm_password" id="confirm-password">
+                 <br>
+            </div>
+
+            <!-- div Birthday-->
+            <div>
+                <label for="birthday">Birthday:</label>
+                <input type="date" name="birthday" id="birthday">
+                <br>
+            </div>
+
+            <!-- div Gender Identity-->
+            <div>
+                <label>Gender Identity:</label><br>
+
+                 <input type="radio" name="gender" id="male">
+                 <label for="male">Male</label>
+
+                 <input type="radio" name="gender" id="female">
+                 <label for="female">Female</label>
+
+                 <input type="radio" name="gender" id="non-binary">
+                 <label for="non-binary">Non-binary</label>
+
+                 <input type="radio" name="gender" id="prefer-not">
+                 <label for="prefer-not">I prefer not to answer</label>
+                 <br>
+            </div>
+            <!-- div textarea-->
+            <div>
+                <label for="comment">A short description about myself:</label>
+                <br>
+                <textarea name="comment" id="comment"  rows="4" cols="40"></textarea>
+                <br>
+            </div>
+            <!-- div textarea-->
+            <label for="language">Favorite Language:</label>
+            <select name="language" id="language" >
+                <option >JavaScript</option>
+                <option >Python</option>
+                <option >Java</option>
+                <option >C#</option>
+            </select>
+            <br>
+
+            <!-- div checkbox -->
+            <div>
+                <input type="checkbox" name="updates" id="updates" >
+                <label for="updates">Yes, I would like to receive periodic email updates</label>
+                <br>
+            </div> 
+            
+            <!-- submit -->
+            <input type="submit" value="Create Account" id="submit">
+        </form>
+        <p>* Indicates a required field</p>
+        
+        
+    </body>
+</html>

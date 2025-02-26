@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio of a Programmer">
+    <title>Portfolio</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Programmer Name</h1>
+        <img src="profile-pic.png" alt="" width="100">
+        <div>
+            <a href="https://github.com/yourgithub" target="_blank">my github</a> |
+            <a href="https://linkedin.com/in/yourlinkedin" target="_blank">my linkedin</a> |
+            <a href="mailto:your.email@example.com">my email</a>
+        </div>
+    </header>
+
+    <!-- Technologies Table -->
+    <section>
+        <h2>Technologies</h2>
+        <table border="1">
+            <tr>
+                <th>Front-End</th>
+                <th>Python</th>
+                <th>JavaScript</th>
+                <th>Database</th>
+                <th>Concepts</th>
+            </tr>
+            <tr>
+                <td>HTML5</td>
+                <td>Django</td>
+                <td>Express</td>
+                <td>MySQL</td>
+                <td>AJAX</td>
+            </tr>
+            <tr>
+                <td>CSS3</td>
+                <td>Flask</td>
+                <td>Mongoose</td>
+                <td>MongoDB</td>
+                <td>OOP</td>
+            </tr>
+            <tr>
+                <td>Bootstrap</td>
+                <td>Unittest</td>
+                <td>React</td>
+                <td></td>
+                <td>REST</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Projects Section -->
+    <section>
+        <h2>Social Snakes</h2>
+        <p>Social Media App made in Python - 
+            <a href="https://github.com/yourproject">code</a> | 
+            <a href="https://yourdeployedproject.com">deployed</a>
+        </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section>
+        <h2>Contact Me</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="40" required></textarea><br><br>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+</body>
+</html>
