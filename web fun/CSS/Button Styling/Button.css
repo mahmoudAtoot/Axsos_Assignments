@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px;
+}
+
+.search-button {
+    border: 2px solid rgb(25, 160, 102);
+    background-color: white;
+    color: rgb(25, 160, 102);
+    padding: 5px 50px;
+    border-radius: 40px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    font: bold;
+}
+
+.search-button:hover {
+    background-color: rgb(11, 114, 50);
+    color: white;
+}
+
+
+.add-button {
+    background-color: #20b9a0;
+    ;
+    border: none;
+    color: white;
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.create-account-button {
+    background-color: #5281d3;
+    color: white;
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: light;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+
+}
+
+.create-account-button:hover {
+    background-color: #1565c0;
+}
