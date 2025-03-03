@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+
+}
+
+.GitHub-Blocks {
+    background-color: #ebf1ff;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+
+
+}
+
+
+img {
+    height: 200px;
+    margin: 10px;
+}
+
+.top {
+    background-color: #5dc9d4;
+    padding: 20px;
+    justify-content: space-around;
+    display: flex;
+
+
+
+}
+
+.midd {
+    background-color: #d8a8b2;
+    justify-content: space-evenly;
+    display: flex;
+    margin-top: 10px;
+
+
+}
+
+.button {
+    background-color: #fcfcff;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+
+
+}
+
+footer a {
+    color: #0077cc;
+    text-decoration: none;
+}
