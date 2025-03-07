@@ -10,6 +10,10 @@ body {
 
 }
 
+main {
+    margin: 0 auto;
+}
+
 header {
     display: flex;
     justify-content: space-around;
@@ -35,7 +39,7 @@ header section p a {
     padding: 20px;
     border-radius: 7px;
     box-shadow: black 2px 2px 2px;
-    
+
 }
 
 .search-input {
@@ -43,22 +47,25 @@ header section p a {
     padding: 10px;
 
 }
-.login-button{
+
+.login-button {
     color: white;
     background-color: #245074;
     padding: 6px;
     border-radius: 7px;
     border: solid grey 2px;
 }
+
 nav {
     margin: 0 auto;
-    margin: 20px 200px 20px 200px ;
-    background-color:#3e7aae;
+    margin: 20px 200px 20px 200px;
+    background-color: #3e7aae;
     border-radius: 7px;
     box-shadow: black 2px 2px 2px;
-    
+
 }
-ul {
+
+nav ul {
     padding: 10px;
     display: flex;
     justify-content: space-around;
@@ -66,24 +73,132 @@ ul {
     list-style: none;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: normal;
-    
-    
+
+
 }
 
-section div {
-    height: 200px;
-    font-size: x-large;
-    color: white;
-    height: 600px;
-    width: 400px;
+.menu {
+    padding: 20px;
+    list-style-type: none;
+    margin-right: 10px 30px 0px 600px;
+}
+
+.menu li {
+    margin: 10px 0;
     text-align: center;
-    text-decoration: underline;
-    font-weight: lighter;
-    font-style: normal;
-    
 }
 
-.info{
-    padding: 60px;
+.menu a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
 
+.menu a:hover {
+    color: #FFD700;
+}
+
+.menu li::before {
+    content: '» ';
+    color: #FFD700;
+}
+
+.python-top {
+    display: flex;
+    margin-left: 200px;
+    width: 95%;
+}
+
+article p {
+    width: 600px;
+    line-height: 1;
+    font-size: 18px;
+    text-align: center;
+    margin-left: 40px;
+}
+
+.zen-text {
+    color: #FFD700;
+    font-style: italic;
+    font-size: 24px;
+    text-align: center;
+
+}
+
+.author {
+    margin: 20px 0px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+.python-bottom {
+    display: flex;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    text-align: center;
+    height: 280px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.column {
+    background-color: white;
+    padding: 25px;
+    margin-left: 20px;
+    width: 700px;
+
+}
+
+.header-line {
+    border-top: 4px solid #6495ED;
+    margin: 0px 0px 20px 0px;
+    width: 100%;
+}
+
+.header-line h2 {
+    height: 250px;
+    color: #333;
+    font-weight: bold;
+
+}
+
+.header-line p {
+    color: #666;
+    font-size: 14px;
+
+}
+
+#botton-list li {
+    list-style-type: square;
+    text-align: center;
+    width: 300px;
+    margin: 4px 0px 4px 150px;
+
+}
+
+.header-line a {
+    list-style-type: square;
+    color: #6495ED;
+    text-decoration: none;
+
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    font-size: large;
+
+    color: #74a8d5;
+    text-align: center;
+    padding: 15px;
+
+}
+
+.footer span {
+    margin: 0px 15px 0px 15px;
 }
