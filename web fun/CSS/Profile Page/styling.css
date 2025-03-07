@@ -1,9 +1,21 @@
 * {
-    margin: 0%;
+    margin: 0 auto;
     padding: 0%;
     border: 0px;
 }
 
+main {
+    display: flex;
+    margin: 0 auto;
+}
+
+body {
+    margin: 0 auto;
+}
+
+header {
+    margin: 0 auto;
+}
 
 nav {
     height: 60px;
@@ -57,20 +69,20 @@ ul li {
     color: white;
 }
 
-.info-nav {
+.info-head {
     height: 70px;
     width: 350px;
     background-color: #17a2b8;
 }
 
-.information {
+section article {
     height: 300px;
     width: 350px;
     color: black;
     font-weight: bold;
     background-color: white;
     border: solid gray 3px;
-    margin: 50px 120px;
+    margin: 50px 20px 20px 200px;
     position: relative;
 
 }
@@ -108,31 +120,32 @@ h2 {
 }
 
 .Education {
-    height: 120px;
+    height: 150px;
     width: 350px;
     color: black;
     font-weight: bold;
     border: solid gray 3px;
-    margin: 10px 120px;
 
 }
 
-.Edu-nav {
+.Edu-header {
     height: 35px;
     width: 350px;
     background-color: #333333;
+    color: white;
 
 }
 
-.Edu-nav h3 {
-    color: white;
-    padding-right: 220px;
+.Edu-header h3 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 15px;
+    padding: 8px;
+
+
 }
 
 .edu-p {
-    margin: 8px 0 0 20px;
+    margin: 5px 0 0 20px;
 }
 
 #date {
@@ -141,34 +154,177 @@ h2 {
 }
 
 .Requests {
-    height: 135px;
-    width: 175px;
+    height: 160px;
+    width: 250px;
     color: black;
     font-weight: bold;
     border: solid gray 3px;
-    position: relative;
-    left: 490px;
-    bottom: 489px;
+    margin: 0 auto;
+    margin: 50px 1000px 20px 0px;
 }
 
-.req-nav {
+.req-header {
     background-color: #333333;
     height: 35px;
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px 0 0 6px;
+
+}
+
+#num-req {
+    color: black;
+    border: solid #ccc 4px;
+    border-radius: 100%;
+    background-color: #ccc;
+    margin: 6px;
+
+}
+
+.todd-info {
+    display: flex;
+}
+
+
+.phil-info {
+    display: flex;
+}
+
+.todd {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: #d5d5d5 solid 1px;
+    align-items: center;
+    margin: 10px 0px 10px 15px;
+}
+
+.phil {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: #d5d5d5 solid 1px;
+    margin: 10px 0px 0px 15px;
+}
+
+.todd-check {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: #d5d5d5 solid 1px;
+    align-items: center;
+    margin: 10px 10px 0px 0px;
+
+}
+
+.phil-check {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: #d5d5d5 solid 1px;
+    align-items: center;
+    margin: 10px 10px 0px 0px;
+
+}
+
+.todd-name {
+    align-items: center;
+    margin-top: 15px
+}
+
+.phil-name {
+    align-items: center;
+    margin-top: 15px;
+
+}
+
+.your-connection {
+
+    height: 300px;
+    width: 250px;
+    color: black;
+    font-weight: bold;
+    border: solid gray 3px;
+    margin: 0px 1000px 20px 0px;
+}
+
+
+.conn-haeder {
+    border: 2px solid gray;
+    background-color: #333333;
+    width: 250px;
+    height: 45px;
+    text-align: left;
+
+
+}
+
+.conn-haeder h1 {
     font-size: 15px;
+    font-style: normal;
+    padding: 10px 6px 0 0px;
+    text-align: left;
+
+}
+
+.conn-haeder h1 span {
+    background-color: #ccc;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    width: 150px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+    text-align: left;
+
+}
+
+.your-connections img {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    border-radius: 50%;
+    margin: 10px 15px;
     padding: 2px;
-
-
 }
-#num-req{
-    border: solid #8b8b8b;
-    border-radius: 50%;
 
+.Adrien {
+    position: absolute;
+    top: 65px;
+    left: 90px;
+    font-size: 20px;
 }
-.req-photo{
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    border: #d5d5d5 solid 5px;
+
+.Anne {
+    position: absolute;
+    top: 110px;
+    left: 90px;
+    font-size: 20px;
+}
+
+.Alayne {
+    position: absolute;
+    top: 155px;
+    left: 90px;
+    font-size: 20px;
+}
+
+.Arry {
+    position: absolute;
+    top: 200px;
+    left: 90px;
+    font-size: 20px;
+}
+
+.View-More {
+    border: solid gray 2px;
+}
+
+.View-More a {
+    position: absolute;
+    left: 15px;
+    bottom: 16px;
+    font-size: 20px;
 }

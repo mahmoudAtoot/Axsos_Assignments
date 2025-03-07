@@ -1,0 +1,55 @@
+header {
+    background-color: #ccc;
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+h1{
+    font-family:  Poppins, sans-serif;
+    color: black;
+}
+
+.search-input{
+    height: 20px;
+    width: 300px;
+    margin-top: 25px;
+    border: solid black 3px;
+    
+}
+
+.login-button{
+    color: white;
+    background-color:#2b78e3;
+    height: 30px;
+    width: 70px;
+    margin-top: 25px;
+
+   
+
+}
+#ninja{
+    margin: 0 auto;
+    width: 800px;
+        
+}
+.ninja{
+ border: solid black 4px;
+ display: flex;
+ width: 500px;
+ height: 200px;
+ margin: 20px 20px 20px 0px;
+
+}
+.ninja-info{
+    margin: 20px 40px 20px 20px;
+}
+.ninja{
+    border: solid black 4px;
+    display: flex;
+    width: 500px;
+    height: 200px;
+    margin: 20px 20px 20px 0px;
+   
+   }
