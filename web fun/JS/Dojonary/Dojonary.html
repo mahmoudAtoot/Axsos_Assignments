@@ -7,52 +7,51 @@
     <title>Dojonary</title>
     <link rel="stylesheet" href="Dojonary.css">
 </head>
-<main id="ninja">
-    <header>
-        <h1>Dojonary</h1>
-        <input type="text" placeholder="search" class="search-input">
-        <button class="login-button">login</button>
-    </header>
+<header>
+    <h1>Dojonary</h1>
+    <input type="text" placeholder="search" class="search-input">
+    <button class="login-button"  onclick="toggleLogin(this)">login</button>
+</header>
 
-    <body>
-        <main id="ninja">
-            <article>
-                <section class="ninja">
-                    <div class="ninja-info">
+<body>
+    <main id="ninja">
+        <article>
+            <section class="ninja">
+                <div class="ninja-info">
 
-                        <h1 class="">ninja</h1>
-                        <h2 class="">noun</h2>
-                        <h3 class="">Plurat ninjas</h3>
-                        <button class="likes">13 like</button>
-                    </div>
-                    <div>
-                        <p>A proctitioner skilled in the <a href="#">Japanese</a>art of <a href="#">ninjutsu </a></p>
-                    </div>
-                    
+                    <h1 class="ninja-h1">ninja</h1>
+                    <h2 class="ninja-h2">noun</h2>
+                    <h3 class="ninja-h2">Plural: ninjas</h3>
+                    <button class="likes" onclick="likeNinja(this)">13 like</button>
+                </div>
+                <div>
+                    <p>A proctitioner skilled in the <a href="#">Japanese</a>art of <a href="#">ninjutsu </a></p>
+                </div>
 
 
+            </section>
+            <section class="ninja">
+                <div class="ninja-info">
 
+                    <h1 class="ninja-h1">ninja</h1>
+                    <h2 class="ninja-h2">noun</h2>
+                    <h3 class="ninja-h2">Plural: ninjas</h3>
+                    <button class="likes" onclick="likeNinja(this)">17 like</button>
+                </div>
+                <div>
+                    <p>A <a href="#">programmer</a> who breaks down problems with <a href="#">zen</a>-like focus</p>
+                </div>
 
+            </section>
+        </article>
+        <article class="defined">
+            <h1>Dojonary is defined by You</h1>
+            <button class="add" onclick="removeButton(this)">Add Definition</button>
+        </article>
+    </main>
 
-
-
-                </section>
-                <section>
-
-                </section>
-            </article>
-        </main>
-
-
-
-
-
-
-
-
-
-        <script src="Dojonary.js"> </script>
-    </body>
+    <script src="Dojonary.js"> </script>
+</body>
 </main>
 
 </html>

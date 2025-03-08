@@ -1,55 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
 header {
     background-color: #ccc;
-    margin: 0px 0px 0px 0px;
+    margin: 0 auto;
     text-align: center;
     display: flex;
     justify-content: space-around;
+    width: 700px;
+    height: 80px;
 }
 
-h1{
-    font-family:  Poppins, sans-serif;
+h1 {
+    font-family: Poppins, sans-serif;
     color: black;
+    margin-top: 20px;
 }
 
-.search-input{
+.search-input {
     height: 20px;
     width: 300px;
     margin-top: 25px;
     border: solid black 3px;
-    
+
 }
 
-.login-button{
+.login-button {
     color: white;
-    background-color:#2b78e3;
+    background-color: #2b78e3;
     height: 30px;
     width: 70px;
     margin-top: 25px;
+    box-shadow: black 3px 3px 0px 0px;
 
-   
 
 }
-#ninja{
+
+.logout-button{
+    color: white;
+    background-color: #2b78e3;
+    height: 30px;
+    width: 70px;
+    margin-top: 25px;
+    box-shadow: black 3px 3px 0px 0px;
+
+}
+
+#ninja {
     margin: 0 auto;
-    width: 800px;
-        
-}
-.ninja{
- border: solid black 4px;
- display: flex;
- width: 500px;
- height: 200px;
- margin: 20px 20px 20px 0px;
+    width: 700px;
+    display: flex;
 
 }
-.ninja-info{
-    margin: 20px 40px 20px 20px;
-}
-.ninja{
+
+.ninja {
     border: solid black 4px;
     display: flex;
-    width: 500px;
-    height: 200px;
+    width: 450px;
+    height: 210px;
     margin: 20px 20px 20px 0px;
-   
-   }
+
+}
+
+.ninja-info {
+    margin: 20px 40px 20px 20px;
+}
+
+.ninja-h1 {
+    font-size: 30px;
+    font-weight: lighter;
+    font-style: normal;
+    font-family: cursive;
+
+}
+
+.ninja-h2 {
+    font-size: 13px;
+    font-weight: lighter;
+    font-style: normal;
+    font-family: cursive;
+    text-align: center;
+
+}
+
+.likes {
+    color: black;
+    background-color: #fed966;
+    font-weight: bolder;
+    height: 30px;
+    width: 70px;
+    margin-top: 25px;
+    box-shadow: black 3px 3px 0px 0px;
+
+}
+
+p {
+    font-size: large;
+    color: black;
+    font-weight: bold;
+    text-align: left;
+    margin: 80px 0px 0px 15px;
+    width: 240px;
+}
+
+.defined {
+    border: solid black 4px;
+    width: 230px;
+    height: 170px;
+    margin-top: 20px;
+
+}
+
+.defined {
+    font-size: medium;
+    width: 140;
+    text-align: left;
+}
+.defined h1 {
+    margin: 20px 0px 0px 10px;
+}
+.add{
+    width: 180px;
+    height: 40px;
+    margin: 40px 20px ;
+    color: black;
+    background-color: #93c37d;
+    font-weight: bolder;
+    box-shadow: black 3px 3px 0px 0px;
+
+}
