@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+#full-page {
+    margin: 0 auto;
+    width: 650px;
+}
+
+.container {
+    display: flex;
+}
+
+header {
+    margin: 0 auto;
+    height: 60px;
+    width: 650px;
+    background-color: black;
+
+
+}
+
+.header-info {
+    color: white;
+    font-size: 25px;
+    padding: 15px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 25px;
+    font-weight: lighter;
+    font-style: normal;
+}
+
+.left-side {
+    background-color: white;
+    width: 180px;
+    height: 220px;
+    border: solid black 3px;
+
+
+
+}
+
+.left-side img {
+    width: 80px;
+    height: 80px;
+    margin: 30px 50px 20px 50px;
+
+}
+
+.left-side a {
+    text-align: center;
+    margin-left: 40px;
+}
+
+.left-side p {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: normal;
+    margin-top: 20px;
+}
+
+.post {
+    border: 3px solid black;
+    padding: 10px;
+    margin: 0px 0px 10px 20px;
+    width: 420px;
+    height: 120px;
+
+
+}
+
+
+
+button {
+    width: 50px;
+    height: 30px;
+    background-color: #ffd966;
+    border: 2px solid black;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    box-shadow: black 2px 2px 0px 0px;
+    text-align: center;
+
+
+}
+
+.name-likes {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.count-like {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px 10px 20px;
+
+}
+
+.count-like p {
+    align-items: center;
+    padding: 10px 25px 0px 10px;
+}
+
+.name-likes h1 {
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 10px 0px 30px;
+    font-weight: bold;
+}

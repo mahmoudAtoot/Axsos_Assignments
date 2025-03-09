@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="likes.css">
+</head>
+
+<body id="full-page">
+    <main>
+        <header>
+            <p class="header-info">Network</p>
+        </header>
+
+        <h1>Your Feed</h1>
+        <section class="container">
+            <section>
+                <article class="left-side">
+                    <img src="user-circle.png" alt="no photo">
+                    <a href="#"> Add on avatar</a>
+                    <p>James Doe</p>
+                </article>
+            </section>
+            <section>
+                <article class="post">
+                    <div class="name-likes">
+                        <article>
+                            <h1>Neil M</h1>
+                        </article>
+                        <article class="count-like">
+                            <p><span id="likeCount1">9</span> like(s)</p>
+                            <button onclick="addLike(0)">Like</button>
+                        </article>
+                    </div>
+                    <div>
+                        <p>I just set up this new discord bot, let me <br> know what you all think. <a href="#">link</a>
+                        </p>
+                    </div>
+                </article>
+                <article class="post">
+                    <div class="name-likes">
+                        <article>
+                            <h1>Nichole K</h1>
+                        </article>
+                        <article class="count-like">
+                            <p><span id="likeCount2">12</span> like(s)</p>
+                            <button onclick="addLike2(1)">Like</button>
+                        </article>
+                    </div>
+                    <div>
+                        <p>Just finished my <a href="#">next comic</a>, check it out.</p>
+                    </div>
+                </article>
+                <article class="post">
+                    <div class="name-likes">
+                        <article>
+                            <h1>Jim R</h1>
+                        </article>
+                        <article class="count-like">
+                            <p><span id="likeCount3">9</span> like(s)</p>
+                            <button onclick="addLike3(2)">Like</button>
+                        </article>
+                    </div>
+                    <div>
+                        <p>I can't stop listening to the <a href="#">new olbum</a><br> Who else is liking it?</p>
+                    </div>
+                </article>
+            </section>
+        </section>
+    </main>
+    <script src = "likes.js"></script>
+</body>
+
+
+</html>
