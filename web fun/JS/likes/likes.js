@@ -12,3 +12,4 @@ function addLike3(){
     z.innerText ++
 }
 
+ 
