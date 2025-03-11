@@ -14,12 +14,12 @@ function dismissMessage() {
 }
 
 function convertTemperature() {
-    let unit = document.getElementById("temp").value;
-    let highTemps = document.querySelectorAll(".temp-high");
-    let lowTemps = document.querySelectorAll(".temp-low");
+    var unit = document.getElementById("temp").value;
+    var highTemps = document.querySelectorAll(".temp-high");
+    var lowTemps = document.querySelectorAll(".temp-low");
 
     highTemps.forEach(temp => {
-        let currentTemp = parseInt(temp.textContent); 
+        var currentTemp = parseInt(temp.textContent); 
         if (unit === "f") {
             temp.textContent = Math.round((currentTemp * 9/5) + 32) + "°";
         } else {
@@ -28,7 +28,7 @@ function convertTemperature() {
     });
 
     lowTemps.forEach(temp => {
-        let currentTemp = parseInt(temp.textContent);
+        var currentTemp = parseInt(temp.textContent);
         if (unit === "f") {
             temp.textContent = Math.round((currentTemp * 9/5) + 32) + "°";
         } else {
