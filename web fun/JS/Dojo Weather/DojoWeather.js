@@ -16,24 +16,28 @@ function dismissMessage() {
 function convertTemperature() {
     var unit = document.getElementById("temp").value;
     var highTemps = document.querySelectorAll(".temp-high");
+    console.log(highTemps)
     var lowTemps = document.querySelectorAll(".temp-low");
+    var highTemps = document.querySelectorAll(".temp-high");
+    for (var i = 0; i < highTemps.length; i++) {
+        if (unit == "Celsius") {
+            console.log(highTemps[i].innerText);
 
-    highTemps.forEach(temp => {
-        var currentTemp = parseInt(temp.textContent); 
-        if (unit === "f") {
-            temp.textContent = Math.round((currentTemp * 9/5) + 32) + "°";
-        } else {
-            temp.textContent = Math.round((currentTemp - 32) * 5/9) + "°";
-        }
-    });
+            var max = (highTemps[i].innerText - 32) * 5 / 9;
+            highTemps[i].innerText = max;
 
-    lowTemps.forEach(temp => {
-        var currentTemp = parseInt(temp.textContent);
-        if (unit === "f") {
-            temp.textContent = Math.round((currentTemp * 9/5) + 32) + "°";
-        } else {
-            temp.textContent = Math.round((currentTemp - 32) * 5/9) + "°";
+
         }
-    });
+        var lowTemps = document.querySelectorAll(".temp-low");
+        for (var i = 0; i < lowTemps.length; i++) {
+            if (unit == "Fahrenheit") {
+                console.log(lowTemps[i].innerText);
+                var min = (lowTemps[i].innerText * 9 / 5) + 32
+                lowTemps[i].innerText = min;
+            }
+        }
+
+    }
+
 }
 
