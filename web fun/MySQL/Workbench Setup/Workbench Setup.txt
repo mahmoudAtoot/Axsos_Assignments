@@ -1,0 +1,37 @@
+create schema academy;
+use academy;
+show tables;
+
+CREATE TABLE users (
+    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    firstName VARCHAR(20) NOT NULL,
+    lastName VARCHAR(20) NOT NULL,
+    email VARCHAR(40) NOT NULL,
+    createdAt DATE,
+    updatedAt DATE
+);
+
+insert into users (id,firstName,lastName,email,createdAt,updatedAt)  values( 1,"Mahmoud","Atoot","M.A@gmail.com","2025-03-17","2025-03-17");
+insert into users (firstName,lastName,email,createdAt,updatedAt)  values( "Omar","Husseini","O.H@gmail.com","2025-03-17","2025-03-17");
+
+SELECT 
+    *
+FROM
+    users;
+    
+
+UPDATE users SET lastName = 'Salah', email='M.S@gmail.com' WHERE id=1;
+
+delete from users  where id = 2;
+
+SELECT 
+    *
+FROM
+    users;
+    
+    
+    
+  
+
+
+
