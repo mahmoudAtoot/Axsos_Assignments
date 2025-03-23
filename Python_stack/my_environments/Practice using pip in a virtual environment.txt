@@ -1,0 +1,28 @@
+pip list-
+lists the installed packages in pip directory
+
+
+deactivate-
+deactivates Python virtual environment
+
+pip3/pip list-
+pip redirects to your specific pip version (pip3)
+
+call myEnvironments/py3Env/Scripts/activate
+reactivates your Python virtual environment
+
+pip install Django==2.2.4
+it installs a specific version of your software
+
+
+pip freeze-
+outputs installed packages in requirements format
+
+pip freeze > requirements.txt
+prints command output into text file (in this case the installed packages
+
+pip uninstall Django 
+uninstalls Django package
+
+pip show Django
+shows nothing, as Django is no longer installed
