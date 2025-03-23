@@ -1,0 +1,43 @@
+@media only screen and (min-width :1025px) and (max-width :5000px){
+	
+	.upload_ques_img{margin:1% 5%; max-width: 850px;height: 300px;float: left; background-repeat: no-repeat;background-position: center;background-size: 100% !important;}
+	.upload_ans_img{max-width: 850px; height:260px !important;float: left;background-repeat: no-repeat;background-position: center;background-size: 100% !important;
+	}
+	
+	}
+
+
+@media only screen and (min-width :768px) and (max-width :1024px){
+	.upload_ques_img{margin:1% 0%; width: 100%;height: 250px;float: left; background-repeat: no-repeat;background-position: center;background-size: 100% !important; margin-left:3%;}
+	.upload_ans_img{width: 100%;height:250px !important;float: left;background-repeat: no-repeat;background-position: center;background-size: 100% !important;
+	}
+	.m_question-label {margin-left:3% !important;}
+	.m_submit_buuton{margin-left:3% !important;}
+	 #m_explanation_area_quizshow{margin-left:1% !important;}
+}
+
+@media only screen and (min-width :481px) and (max-width :767px){
+	.upload_ques_img{margin:1% 3%; width: 100%;height: 250px;float: left; background-repeat: no-repeat;background-position: center;background-size: 100% !important;
+	
+	}
+	.upload_ans_img{width: 100%;height:250px !important;float: left;background-repeat: no-repeat;background-position: center;background-size: 100% !important;
+	}
+	}
+
+@media only screen and (min-width :301px) and (max-width :480px){
+	.upload_ques_img{ margin:2% 0%; width: 100%;height: 138px;float: left; background-repeat: no-repeat;background-position: center;background-size: 100% !important;}
+	
+	.upload_ans_img{width: 100%;height:138px !important;float: left;background-repeat: no-repeat;background-position: center;background-size: 100% !important;}
+	}
+
+
+@media only screen and (min-width :0) and (max-width :300px){
+	.upload_ques_img{ margin:1% 0%; width: 100%;height: 138px;float: left; background-repeat: no-repeat;background-position: center;background-size: 100% !important;}
+	
+	.upload_ans_img{width: 100%;height:138px !important;float: left;background-repeat: no-repeat;background-position: center;background-size: 100% !important;}
+	}
+
+@media only screen and (min-width :321px)  and (max-width :490px) and (orientation : landscape){
+	.upload_ques_img{ margin:1% 0%; width: 100%;height: 138px;float: left; background-repeat: no-repeat;background-position: center;background-size: 100% !important;}
+	.upload_ans_img{width: 100%;height:138px !important;float: left;background-repeat: no-repeat;background-position: center;background-size: 100% !important;}
+	}

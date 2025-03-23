@@ -1,0 +1,13 @@
+<svg id="Facebook_Default" data-name="Facebook Default" xmlns="http://www.w3.org/2000/svg" width="167" height="60" viewBox="0 0 167 60">
+  <g id="Rectangle_151059" data-name="Rectangle 151059" fill="#fff" stroke="#3c5a9a" stroke-width="1">
+    <rect width="167" height="60" rx="5" stroke="none"/>
+    <rect x="0.5" y="0.5" width="166" height="59" rx="4.5" fill="none"/>
+  </g>
+  <g id="Group_230513" data-name="Group 230513">
+    <text id="Facebook" transform="translate(65 36)" fill="#3c5a9a" font-size="18" font-family="roboto,sans-serif"><tspan x="0" y="0">Facebook</tspan></text>
+    <g id="Group_230512" data-name="Group 230512" transform="translate(-582 -341)">
+      <circle id="Ellipse_6" data-name="Ellipse 6" cx="15" cy="15" r="15" transform="translate(607 356)" fill="#3c5a9a"/>
+      <path id="Path_5" data-name="Path 5" d="M25.639,15.7a7.185,7.185,0,0,0-1.284-.149c-.923,0-.983.425-.983,1.105v1.211H25.68l-.2,2.507H23.373V28H20.484V20.373H19V17.866h1.484V16.315c0-2.125.943-3.315,3.309-3.315A9.536,9.536,0,0,1,26,13.3Z" transform="translate(600 351)" fill="#fff" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

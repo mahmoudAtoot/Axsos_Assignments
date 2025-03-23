@@ -1,0 +1,15 @@
+<svg id="X.com_Default" data-name="X.com Default" xmlns="http://www.w3.org/2000/svg" width="167" height="60" viewBox="0 0 167 60">
+  <g id="Rectangle_151059" data-name="Rectangle 151059" fill="#fff" stroke="#000" stroke-width="1">
+    <rect width="167" height="60" rx="5" stroke="none"/>
+    <rect x="0.5" y="0.5" width="166" height="59" rx="4.5" fill="none"/>
+  </g>
+  <g id="Group_230514" data-name="Group 230514" transform="translate(9)">
+    <text id="X.com" transform="translate(69 36)" font-size="18" font-family="roboto,sans-serif"><tspan x="0" y="0">X.com</tspan></text>
+    <g id="twitter-x-seeklogo-3" transform="translate(-323.95 -114.27)">
+      <circle id="Ellipse_9468" data-name="Ellipse 9468" cx="15" cy="15" r="15" transform="translate(352.95 129.27)" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+      <g id="layer1" transform="translate(360.719 136.834)">
+        <path id="path1009" d="M483.976,356.79l5.791,8.273-5.828,6.727h1.312l5.1-5.889,4.122,5.889h4.464l-6.117-8.739,5.425-6.261h-1.312l-4.7,5.424-3.8-5.424Zm1.929,1.032h2.051l9.055,12.936H494.96Z" transform="translate(-483.94 -356.79)" fill="#fff" stroke="#fff" stroke-width="0.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

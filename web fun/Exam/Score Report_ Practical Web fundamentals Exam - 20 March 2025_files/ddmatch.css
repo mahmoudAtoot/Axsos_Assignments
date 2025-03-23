@@ -1,0 +1,40 @@
+.dragDDmatch_main{width:100%; float:left;}
+.dragDDmatch { width:90%; margin:0 auto; margin-top:30px; padding:15px; background:transparent;}
+.dragDDmatch.custom-state-active { background: #eee; }
+.dragDDmatch li { float: left; width: fit-content; padding: 0.4em; margin: 10px; text-align: center; list-style: none; cursor: move; background: #fff;}
+/* #dragDDmatch li{border:1px solid #cdcdcd;} */	
+[id*="dragDDmatch_"] li{border:1px solid #cdcdcd;}		
+.dragDDmatch li span.icon-reorder{position: relative; margin-right:5px; margin-top:1px;}
+.dragDDmatch li span{float:left; color:#4d4d4d !important;}
+.dropDDmatch { width: 100%; background-color: #fff; color:#4d4d4d; display: inline-flex; min-width: 150px; width: fit-content; border-bottom: 2px solid #ccc; min-height: 21px; padding:5px; border-radius:1px;}
+#question-desc-align .dropDDmatch span, #im .dropDDmatch span{color: #4d4d4d !important;}
+.show_practice_mode .dropDDmatch, .storyDescbox .dropDDmatch{padding-bottom:4px !important; text-align: left; background-color: #fff;}
+.dropDDmatch .dragDDmatch{min-height: 1em; background: none; /* margin-left:auto !important; margin-right:auto !important; */}
+.dropDDmatch li span.icon-reorder{display:none;}
+.dropDDmatch ul{ width:fit-content; }
+.dropDDmatch ul, .dropDDmatch ul li{padding:0px !important; margin:0px !important; }
+.dropDDmatch.ui-droppable-active{border:0px solid !important; border-bottom:2px solid #3c8ac9 !important;}
+.dragDDmatch_main .dragDDmatch{ display: flex; justify-content: center; flex-wrap: wrap; border-radius: 3px; background: #BBBBBB17;border-radius: 5px;}
+.ui-droppable-active{border:1px solid #3c8ac9 !important;}
+.dragDDmatch_main .icon-reorder:before{color: #4d4d4d !important;}
+.ddtmatch_row {display: flex; flex-direction: row; /* flex-wrap: wrap; */ padding:5px 0 5px 0; width: 85%; margin-bottom:10px; align-items: center; }  
+/* .ddtmatch_column {flex-basis: 100%;} */
+.ddtmatch_column .choice{border-bottom:2px solid #ccc; padding-bottom: 3px;}
+.ddtmatch_row .column_heading{font-weight:600;}
+.column1, .column2{width:25%;}
+.column3{width:50%;}
+#display_div .m_question-label.dragdropmatch-label, .quiz_tablediv .m_question-label.dragdropmatch-label{width:100%; font-size:18px;}
+#display_div .dragDDmatch_main{font-size:18px;}
+#detailed_score_report #ddm_filled.m_question-label{margin-left:0px !important;}
+#detailed_score_report #ddm_filled .ddtmatch_row{width:100%;}
+.match_div{display:flex; align-items: center; flex-wrap: wrap;}
+#detailed_score_report .match_div{display: flex; align-items: center;}
+#detailed_score_report .match_div > span{display: flex; padding-top:7px; padding-left:3px; margin-right:2px;}
+.match_line{background: transparent url('/quiz-school/manage/image/group_match.svg') 0% 0% no-repeat padding-box; height:10px; width:50px; display:flex; margin:auto;}
+.dropDDmatch .dragDDtext li{text-align: left;}
+@media only screen and (max-width: 768px) and (min-width: 100px){
+    .ddtmatch_row{width:100%;}
+}
+/* @media screen and (min-width: 800px) {
+    .ddtmatch_column {flex: 1;}
+} */

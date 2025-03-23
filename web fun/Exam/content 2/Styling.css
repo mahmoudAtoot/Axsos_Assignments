@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;
+}
+
+.header-yoga {
+    background-image: url("content/yoga-header.jpg");
+    height: 1000px;
+    width: 1900px;
+    margin: 0;
+}
+
+header section {
+    width: 1700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px 20px 40px;
+    border-bottom: solid white 2px;
+    margin: 0px 0px 0px 40px;
+}
+
+section nav a {
+    color: white;
+    font-size: 25px;
+    font-weight: lighter;
+    padding: 10px;
+
+}
+
+.search-input {
+    width: 400px;
+    height: 40px;
+    margin: 10px 0px 0px 0px;
+    border: solid black 3px;
+    padding: 0px 0px 0px 20px;
+}
+
+.sound-icon {
+    width: 35px;
+    position: relative;
+    top: 15px;
+    right: 50px;
+    ;
+}
+
+.search-icon {
+    width: 25px;
+    position: relative;
+    top: 10px;
+    left: 30px;
+
+
+}
+
+header div {
+    color: white;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 400;
+    margin: 400px 0px 0px 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+    color: white;
+    background-color: #e0554b;
+    height: 60px;
+    width: 250px;
+    font-size: 22px;
+    margin: 40px 0px 0px 120px;
+    border: solid black 3px;
+    box-shadow: black 5px 3px;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.page-yoga {
+    height: 800px;
+    background-color: #eeeeee;
+    width: 1900px;
+}
+
+.page-yoga article {
+    text-align: center;
+    padding: 30px;
+    font-size: 40px;
+}
+
+.page-yoga article p {
+    margin: 10px 0px 0px;
+}
+
+.kundalini-yoga img {
+    border-radius: 100%;
+    height: 250px;
+    width: 250px;
+    border: solid black 3px;
+}
+
+.yoga-classes {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-yoga {
+    background-color: #d04204;
+    color: black;
+    height: 180px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 1900px;
+
+}
+
+.footer-yoga img {
+    width: 1900px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    padding: 6px;
+    margin: 0px 5px 0px 0px;
+
+}
+
+.footer-yoga p {
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0px 0px 0px 50px;
+}

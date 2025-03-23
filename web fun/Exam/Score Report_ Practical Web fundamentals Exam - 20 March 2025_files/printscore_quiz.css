@@ -1,0 +1,51 @@
+/*-------- ProProfs certificate Print style ------------*/
+/* Proprofs.com
+Printing quizes from printable quiz page.
+*/
+
+body{font-family:Arial, Helvetica, sans-serif;}
+img{ border:none;}
+.breadcrumb-web{display:none;}
+#left-column-td {display:none;}
+#right-column-td {display:none;}
+#header-wrapper, #take-survey, #footer{display:none;}
+#content #breadcrumb {display:none;}
+
+#middle-column-td {
+    display:block;
+}
+#td-footer-ad{display:none;}
+
+#td_middle_column{width:100%;}
+
+/*Overriding the two styles which are used only in printable webpage view*/
+.header-wrapper{display::none;}
+#qtitle{display:none;}
+#right-wrapper_quiz{display:none;}
+#adbottom{display:none;}
+#share_print_comnt{display:none;}
+#takeQuiz{display:none;}
+#shareCert{display:none;}
+#shareCertOption1{display:none;}
+#shareCertOption2{display:none;}
+#bonusPoint{display:none;}
+#footer_text_1{display:none;}
+#footer_text_2{display:none;}
+#submit_btn{display:none;}
+#proprofstopmenu{display: none;}
+#qSideBar{display: none;}
+#qFooter{display: none;}
+#alltools{display: none;}
+#sma{display: none;}
+#printL{display:none;}
+.ad_topHead{display:none;}
+.gyad{display:none;}
+#headMiddle{display: none;}
+.headQST{display:none;}
+#shareThis{display:none;}
+#footerContainer{display: none;}
+.tryThis{display: none;}
+.qvtitle{display: none;}
+.m_top{ brrder:0 !important;}
+
+#qsCertificate{ text-align:center; zoom:150%; margin:0; padding:0;}

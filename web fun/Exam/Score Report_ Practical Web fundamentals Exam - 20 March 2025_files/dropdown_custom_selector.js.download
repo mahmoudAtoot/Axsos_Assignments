@@ -1,0 +1,109 @@
+document.addEventListener('DOMContentLoaded', function(){
+        /** Extend jQuery Functions Start */
+        jQuery.fn.extend({
+            'qm_custom_select': function(){
+                var select_lists =   $(this);
+                select_lists.each(function(ii, ee){
+                    var select_list     =   $(ee);
+                    if( select_list.find('option').length > 0 ){
+                        var unique_ele      =   'qm_custom_select_'+ Math.ceil(Math.random()*10000000000);
+                        var unique_ele_id   =   '#'+ unique_ele;
+                        var unique_ele_lis  =   '#'+ unique_ele+ ' ul li';
+                        var select_options  =   select_list.find('option'); 
+                        var selected_text   =   $(select_options[0]).text();
+                        let elementClasses  =   '';
+                        var custom_ele_lis  =   '<ul class="hidden" >';
+                        select_options.each(function(i, e){
+                            var this_selected   =   $(e).attr('selected') != undefined;
+                            if( $(e).text().indexOf('cspan') >= 0 ){
+                                custom_ele_lis      +=  '<li data-select_val="'+ $(e).attr('value') +'" class="' + ( this_selected ? 'active' : '') + '">'+ $(e).text() +'</li>';
+                                if( this_selected )
+                                    selected_text   =  $(e).text(); 
+                            }
+                            else{
+                                custom_ele_lis      +=  '<li data-select_val="'+ $(e).attr('value') +'" class="' + ( this_selected ? 'active' : '') + '">'+ $(e).text().replace('>', '&gt;').replace('<', '&lt;') +'</li>';
+                                if( this_selected )
+                                    selected_text   =  $(e).text().replace('>', '&gt;').replace('<', '&lt;'); 
+                            }
+                        });
+                        custom_ele_lis      +=   '</ul>';
+
+                        $('<div class="qm_custom_select '+ ( select_list.prop('disabled') === true?'disabled_cust_dd':'' ) +' '+elementClasses+'" id="'+ unique_ele +'"><label>'+ selected_text +'</label>' + custom_ele_lis + '</div>').insertAfter(select_list);
+                        select_list.hide();
+
+                        /** Calculate Min width */
+                        var unique_ele_ob   =   $(unique_ele_id).find('label');
+                        var cloned_ele      =   select_list.clone();
+                        $('body').append(cloned_ele);
+                        var min_width       =   cloned_ele.width() + parseInt(unique_ele_ob.css('padding-left')) + parseInt(unique_ele_ob.css('padding-right'));
+                        cloned_ele.remove();                        
+                        unique_ele_ob.css('width', min_width);
+                        
+
+                        $(document).on('click', unique_ele_id , function(e){
+                            if( !$(e.target).is('label') || $(this).hasClass('disabled_cust_dd') ) return false;
+                            var toggle_ele  =   $(this).find('ul');
+                            var top_offset  =   $(this)[0].getBoundingClientRect().top;
+                            if( ( $(window).height() - $(this).offset().top - $(unique_ele_id).height() ) < toggle_ele.height() && (top_offset > $(window).height()/2) ){
+                                var max_height = top_offset - 60;
+                                toggle_ele.css("max-height", max_height);
+                                toggle_ele.addClass('show_on_top');
+                            }
+                            else{
+                                var max_height = $(window).height() - $(this)[0].getBoundingClientRect().top - 60;
+                                toggle_ele.css("max-height", max_height);
+                                toggle_ele.removeClass('show_on_top');
+                            }
+                            $('.qm_custom_select ul').not(toggle_ele).hide();
+                            toggle_ele.slideToggle(150);
+                        }).on('click', unique_ele_lis, function(){
+                            var clicked_ele     =   $(this);
+                            var selected_val    =   clicked_ele.attr('data-select_val');
+                            $(unique_ele_lis).removeClass('active');
+                            clicked_ele.addClass('active');
+                            select_list.val(selected_val).trigger('change');
+                            $(unique_ele_id).find('label').text(clicked_ele.text());
+                            clicked_ele.parents('ul').hide();
+                        }).on('click', function(e){
+                            if( !( $(e.target).is('.qm_custom_select') || $(e.target).is('.qm_custom_select *') ) )
+                                $('.qm_custom_select ul').hide();
+                        });
+                    }
+                });                        
+                return this;
+            }
+        });
+        /** Extend jQuery Functions End */
+
+        if($("select").attr("data-quesType"))
+        {
+            $('[data-quesType="dropdown"]').each(function(){
+
+                var dropdown_id = $(this).attr('id');
+                $('#'+dropdown_id).qm_custom_select();   
+                
+            }); 
+        }   
+        var isIOS = (function () {
+            var iosQuirkPresent = function () {
+                var audio = new Audio();
+        
+                audio.volume = 0.5;
+                return audio.volume === 1;   // volume cannot be changed from "1" on iOS 12 and below
+            };
+        
+            var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+            var isAppleDevice = navigator.userAgent.includes('Macintosh');
+            var isTouchScreen = navigator.maxTouchPoints >= 1;   // true for iOS 13 (and hopefully beyond)
+        
+            return isIOS || (isAppleDevice && (isTouchScreen || iosQuirkPresent()));
+        })();
+        if( 0 && isIOS) {
+            $('[data-quesType="match"]').each(function(){
+                $(this).parents('#m_metch_option').addClass('custom_select_match');
+                var dropdown_id = $(this).attr('id');
+                $('#'+dropdown_id).qm_custom_select();   
+                
+            }); 
+        }         
+});

@@ -1,25 +1,48 @@
-var currentValue = "0";
-function updateDisplay() {
-    document.querySelector("#display").innerText = currentValue;
 
-}
+var display = document.querySelector("#display")
+var equals = document.querySelector("#equals")
+var op
+var calculation;
 function press(num) {
 
-    if (document.querySelector("#display").innerText == 0) {
-        currentValue = num;
+    if (display.innerText == 0) {
+        display.innerText = num;
     } else {
-        currentValue += String(num);
+        display.innerText += num;
     }
-    updateDisplay()
 }
 
-function setOP(){
-    if(document.querySelector("#display").innerText !== 0){
-            
-    }
+function setOP(operator) {
+    calculation = display.innerText;
+    display.innerText = 0;
+    op = operator;
 
+}
+function clr() {
+    display.innerText = 0;
+    op = ""
+    calculation = 0
+
+}
+function calculate(){
     
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

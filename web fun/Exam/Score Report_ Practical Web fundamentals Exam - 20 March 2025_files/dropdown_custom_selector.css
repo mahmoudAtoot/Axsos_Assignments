@@ -1,0 +1,26 @@
+/*Dropdown question custom css: Start */
+@font-face{font-family:icomoon;src:url(/quiz-school/fonts/gridview/icomoon.eot?xrnlq3);src:url(/quiz-school/fonts/gridview/icomoon.eot?xrnlq3#iefix) format('embedded-opentype'),url(/quiz-school/fonts/gridview/icomoon.ttf?xrnlq3) format('truetype'),url(/quiz-school/fonts/gridview/icomoon.woff?xrnlq3) format('woff'),url(/quiz-school/fonts/gridview/icomoon.svg?xrnlq3#icomoon) format('svg');}
+.qm_custom_select ul, .qm_custom_select li {list-style: none;}
+.hidden{display: none;}
+.qm_custom_select{max-width:100%; position: relative; font-family: Roboto,sans-serif;}
+.qm_custom_select > label{max-width:100%; border: 1px solid #ccc; padding: 10px 10px 10px 10px !important; background: none !important; display: inline-block; font-size: 20px; font-weight: 500; border-radius: 2px; max-height: 21px;
+    white-space: nowrap; text-overflow: ellipsis; overflow: hidden; margin: 0px; cursor: pointer; position: relative;}
+.qm_custom_select > label:after {font-family: 'icomoon' !important;position: absolute;right: 10px;content: "\ea92";font-size: 10px;color: #8F8F8F;top: 15px;}
+.qm_custom_select ul{position: absolute;background: #fff;box-shadow: 0px 0px 6px 2px #ddd;-webkit-box-shadow: 0px 0px 6px 2px #ddd;-moz-box-shadow: 0px 0px 6px 2px #ddd;min-width: 328px; max-width: 100%; top: 100%; z-index: 3;overflow: auto;}
+.qm_custom_select ul.show_on_top{bottom: 110%;top: auto;}
+.qm_custom_select ul li{padding: 10px 15px 10px 15px;font-size: 15px;cursor: pointer;}
+.qm_custom_select ul li:hover{background: #EDEDED;}
+.qm_custom_select ul li.active{background: #EDEDED;}
+
+.qm_custom_select ul::-webkit-scrollbar{width: 10px;} 
+.qm_custom_select ul::-webkit-scrollbar-track{background: #EBEBEB;}
+.qm_custom_select ul::-webkit-scrollbar-thumb{background: #B2B2B2;}
+
+@media (max-width: 450px) and (min-width: 100px)
+{
+	.qm_custom_select > label{max-width: 94%;}
+	.qm_custom_select > label:after{top:14px;}
+}
+/*Dropdown question custom css: End */
+
+.custom_select_match#m_metch_option { overflow: visible !important; }.custom_select_match#m_metch_option > div:not(.match-type) { float: none !important; }.custom_select_match#m_metch_option .qm_custom_select { margin-top: 10px; }
