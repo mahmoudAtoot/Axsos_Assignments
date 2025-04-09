@@ -1,0 +1,28 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    margin: 0 auto;
+    text-align: center;
+    margin: 200px 0 0 0;
+
+}
+body form{
+    margin: 30px 0 0 0;
+
+}
+
+input {
+    border: solid black 2px;
+    width: 80px;
+    height: 40px;
+}
+
+button{
+    border: solid black 2px;
+    width: 100px;
+    height: 40px; 
+    margin: 5px 0 0 0 ;   
+}
