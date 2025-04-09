@@ -5,4 +5,4 @@ urlpatterns = [
     path('', views.index),  
     path("result", views.result),
     
-               ]
+    ]
