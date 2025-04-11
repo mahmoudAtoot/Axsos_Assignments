@@ -1,0 +1,31 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    color: black;
+    padding: 0 0 0 20px;
+    width: 100%;
+    margin: 10px 0 0 0;
+}
+
+p{
+    color: black;
+    size: 20px;
+    padding: 10px;
+}
+
+section{
+    display: flex;
+    margin: 40px 0 0 0 ;
+}
+
+article{
+    height: 80px;
+    width: 180px;
+    border: solid black 2px;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
