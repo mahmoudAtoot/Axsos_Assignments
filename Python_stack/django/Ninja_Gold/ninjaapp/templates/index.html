@@ -54,13 +54,13 @@
     <p>Activities: </p>
     <textarea rows="10" cols="100" readonly>
         {% for activity in request.session.activities %}
-        {{ activity }}
+        <p>{{ activity }}</p>
         {% endfor %}
         </textarea>
 
     <form action="/reset" method="POST">
         {% csrf_token %}
-        <button type="submit">Reset Gold</button>
+        <button type="submit" >Reset Gold</button>
     </form>
 </body>
 

@@ -29,3 +29,15 @@ article{
     padding: 20px;
     margin: 10px;
 }
+
+textarea {
+    color: green;
+    font-weight: bold;
+}
+
+textarea {
+    color: red;
+    font-weight: bold;
+}
+
+

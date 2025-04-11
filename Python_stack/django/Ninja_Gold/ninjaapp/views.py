@@ -27,9 +27,17 @@ def process_money(request):
             request.session['activities'] = []  
 
  
-        time_now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        activity = f"Visited {building} and earned {gold_earned} gold. ({time_now})"
-        request.session['activities'].insert(0, activity)  
+        time_now = datetime.now().strftime("%Y-%m-%d %H:%M:%S") 
+        if gold_earned > 0:
+            color = "green"
+            message = f'You entered a {building} and earned {gold_earned} gold! ({time_now})'
+        else:
+            color = "red"
+            message = f'You failled a {building} and lost {gold_earned} gold! ({time_now})'
+
+
+        request.session['activities'].insert(0, message ,)
+
         return redirect('/')
     
 def reset(request):
