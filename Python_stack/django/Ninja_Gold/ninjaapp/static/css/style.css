@@ -30,12 +30,12 @@ article{
     margin: 10px;
 }
 
-textarea {
+.green {
     color: green;
     font-weight: bold;
 }
 
-textarea {
+.red {
     color: red;
     font-weight: bold;
 }

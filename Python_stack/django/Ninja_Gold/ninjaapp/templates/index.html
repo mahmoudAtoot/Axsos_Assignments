@@ -52,15 +52,15 @@
         </form>
     </section>
     <p>Activities: </p>
-    <textarea rows="10" cols="100" readonly>
+    <div>
         {% for activity in request.session.activities %}
-        <p>{{ activity }}</p>
+        <ul  class="{% if 'lost' in activity %}red{% else %}green{% endif %}">{{ activity }} </ul>
         {% endfor %}
-        </textarea>
+    </div>
 
     <form action="/reset" method="POST">
         {% csrf_token %}
-        <button type="submit" >Reset Gold</button>
+        <button type="submit">Reset Gold</button>
     </form>
 </body>
 
