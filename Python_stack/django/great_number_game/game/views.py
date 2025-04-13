@@ -1,29 +1,31 @@
 import random
+random.randint(1, 100)  
 from django.shortcuts import render, redirect
 
 def index(request):
-    if 'random_number' not in request.session:
-        request.session['random_number'] = random.randint(1, 100)
+    if 'number' not in request.session:
+        request.session['number'] = random.randint(1, 100)
+        request.session['message'] = ''
+    return render(request, 'index.html')
 
-    message = request.session.get('message', "")
-    return render(request, 'index.html', {'message': message})
+def great_num(request):
+    if request.method == 'POST':
+        guess = int(request.POST['guess'])
+        number = request.session['number']
+        print(guess)
 
-def guess_number(request):
-    if request.method == "POST":
-        try:
-            guess = int(request.POST.get("guess"))
-        except ValueError:
-            request.session['message'] = "Invalid input! Please enter a number."
-            return redirect('/')
-
-        random_number = request.session['random_number']
-
-        if guess < random_number:
-            request.session['message'] = "Too low! Try again."
-        elif guess > random_number:
-            request.session['message'] = "Too high! Try again."
+        if guess > number:
+            result = "Too high!"
+        elif guess < number:
+            result = "Too low!"
         else:
-            request.session['message'] = "🎉 Congratulations! You guessed it right!"
-            request.session.pop('random_number')  # Reset the game
+            result = "Correct!"
+            request.session.pop('number')  
+            
+        print(number)
 
-    return redirect('/')
+        return render(request, 'index.html', {'result': result , "num":number} )
+
+    return redirect('index')
+
+

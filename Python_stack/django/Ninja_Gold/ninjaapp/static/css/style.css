@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: "Balsamiq Sans";
 }
 
 body{
@@ -28,6 +29,15 @@ article{
     text-align: center;
     padding: 20px;
     margin: 10px;
+}
+
+div{
+    border: solid black 2px;
+    padding: 10px;
+    width: 600px;
+    margin: 2px;
+
+
 }
 
 .green {
