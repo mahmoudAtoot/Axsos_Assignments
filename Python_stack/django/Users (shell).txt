@@ -1,0 +1,26 @@
+1- py manage.py shell
+2- from userapp.models import *
+3-  User.objects.create(first_name="Waseem", last_name="abu_nada", email_address="w.n@gmail.com", age=23)
+    User.objects.create(first_name="Waseem", last_name="abu_nada", email_address="w.n@gmail.com", age=23)
+    User.objects.create(first_name="Mahmoud", last_name="atoot", email_address="M.A@gmail.com", age=26)
+
+4-  User.objects.all()
+     users = User.objects.all()
+>>> for user in users:
+...     print(user.first_name)		
+
+5-   User.objects.last().first_name
+
+6-   User.objects.first().first_name 
+ 
+7- user = User.objects.get(id=3)
+>>> user.last_name = "Pancakes"
+>>> user.save()
+
+8- User.objects.get(id=2).delete()
+
+9-  User.objects.all().order_by('first_name')
+	for user in users:
+...     print(user.first_name)
+
+10- User.objects.all().order_by('-first_name')

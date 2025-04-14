@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body{
+    margin: 0 auto;
+    width: 800px;
+    align-items: center;
+    text-align: center;
+    
+    
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 2px solid  black;
+    text-align: left;
+}
+
+th {
+    background-color: silver;
+}
+
+form{
+    margin: 40px 0 0 0;
+    padding: 15px;
+}
