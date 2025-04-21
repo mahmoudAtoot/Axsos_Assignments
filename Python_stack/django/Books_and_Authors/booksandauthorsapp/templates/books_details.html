@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Details</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+    <div class="container py-5">
+
+        <h1 class="mb-4">Title: <span class="text-primary">{{ book.title }}</span></h1>
+        <h3 class="mb-2">ID: <span class="text-muted">{{ book.id }}</span></h3>
+        <h3 class="mb-4">Description: <span class="text-secondary">{{ book.description }}</span></h3>
+
+        <h2 class="mb-3">Authors</h2>
+        <ul class="list-group mb-4">
+            {% for author in book.authors.all %}
+            <li class="list-group-item">{{ author.first_name }} {{ author.last_name }}</li>
+            {% endfor %}
+        </ul>
+
+        <form method="POST" action="/connection_with_author/{{ book.id }}" class="card p-4 shadow-sm bg-white">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label for="author_id" class="form-label">Select Author:</label>
+                <select name="author_id" id="author_id" class="form-select">
+                    {% for author in authors %}
+                    <option value="{{ author.id }}">{{ author.first_name }} {{ author.last_name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <button type="submit" class="btn btn-success">Add</button>
+        </form>
+        
+        <a href="/books" class="btn btn-sm btn-outline-primary mt-3">Go Back</a>
+    </div>
+
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

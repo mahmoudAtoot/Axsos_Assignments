@@ -5,3 +5,7 @@ urlpatterns = [
     path('dojo/create/',views.add_user),
     path('ninja/create/', views.create_ninja ),
 ]
+
+
+
+
