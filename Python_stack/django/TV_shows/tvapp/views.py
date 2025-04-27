@@ -11,9 +11,6 @@ def index(request):
 def show(request):
     return render(request, 'add_show.html')
 
-def all_shows(request):
-    return render(request, 'All_Shows.html')
-
 def add_show(request):
     if request.method =='POST':
         errors = models.Show.objects.basic_validator(request.POST)

@@ -28,10 +28,9 @@
                 <label for="network" class="form-label">Network</label>
                 <input type="text" name="network" id="network" class="form-control" value="{{ show.network }}" required>
             </div>
-
             <div class="mb-3">
                 <label for="date" class="form-label">Release Date</label>
-                <input type="date" name="date" id="date" class="form-control" value="{{ show.release_date }}" required>
+                <input type="date" name="date" id="date" class="form-control" value="{{show.release_date|date:'Y-m-d'}}" required>
             </div>
 
             <div class="mb-3">
