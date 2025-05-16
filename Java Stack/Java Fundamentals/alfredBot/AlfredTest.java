@@ -12,7 +12,7 @@ public class AlfredTest {
         String testGreeting = alfredBot.basicGreeting();
         String testGuestGreeting = alfredBot.guestGreeting("Shatha Bast");
         String testDateAnnouncement = alfredBot.dateAnnouncement();
-        
+         
         String alexisTest = alfredBot.respondBeforeAlexis(
                             "Alexis! Play some low-fi beats."
                             );
@@ -29,8 +29,7 @@ public class AlfredTest {
         System.out.println(alexisTest);
         System.out.println(alfredTest);
         System.out.println(notRelevantTest);
-
-        
+       
         // Uncomment these one at a time as you implement each method.
         // System.out.println(testGuestGreeting);
         // System.out.println(testDateAnnouncement);
