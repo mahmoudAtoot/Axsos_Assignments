@@ -1,3 +1,4 @@
+
 import java.util.ArrayList;
 
 public class Order {
@@ -24,7 +25,7 @@ public class Order {
     public void addItem(Item item) {
         items.add(item);
     }
-
+    
     // GET STATUS MESSAGE METHOD
     public String getStatusMessage() {
         return ready ? "Your order is ready." : "Thank you for waiting. Your order will be ready soon.";
