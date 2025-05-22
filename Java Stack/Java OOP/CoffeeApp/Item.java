@@ -11,7 +11,7 @@ public class Item {
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public void setName(String name) {
@@ -19,7 +19,7 @@ public class Item {
     }
 
     public double getPrice() {
-        return price;
+        return this.price;
     }
 
     public void setPrice(double price) {
@@ -27,11 +27,15 @@ public class Item {
     }
 
     public int getIndex() {
-        return index;
+        return this.index;
     }
 
     public void setIndex(int index) {
         this.index = index;
     }
 
+    
+
+
 }
+

@@ -2,24 +2,25 @@
 import java.util.ArrayList;
 
 public class Order {
+
     private String name;
     private double total;
     private boolean ready;
     private ArrayList<Item> items = new ArrayList<Item>();
 
     public Order() {
-        name = "Guest";
-        ready = false;
+        this.name = "Guest";
+        this.ready = false;
     }
 
     public Order(String name) {
         this.name = name;
-        ready = false;
-        items = new ArrayList<Item>();
+        this.ready = false;
+        this.items = new ArrayList<Item>();
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public void setName(String name) {
@@ -27,7 +28,7 @@ public class Order {
     }
 
     public boolean isReady() {
-        return ready;
+        return this.ready;
     }
 
     public void setReady(boolean ready) {
@@ -35,7 +36,7 @@ public class Order {
     }
 
     public String getStatusMessage() {
-        if (ready) {
+        if (this.ready) {
             return "Your order is ready!";
         } else {
             return "Thank you for waiting. Your order will be ready soon.";
@@ -43,7 +44,7 @@ public class Order {
     }
 
     public ArrayList<Item> getItems() {
-        return items;
+        return this.items;
     }
 
     public void addItem(Item item) {
@@ -51,26 +52,27 @@ public class Order {
     }
 
     public double getOrderTotal() {
-        for (Item item : items) {
+        for (Item item : this.items) {
+            System.out.println(item.getPrice());
             if (item != null) {
-                total+=item.getPrice();
+                // this.total+=item.getPrice();
             } else {
                 System.out.println("(Invalid order)");
             }
         }
-        return total;
+        return this.total;
     }
 
     public void display() {
-        System.out.println("Customer Name: " + name);
-        for (Item item : items) {
+        System.out.println("Customer Name: " + this.name);
+        for (Item item : this.items) {
             if (item != null) {
-                System.out.printf(" %s - $%.2f\n", item.getName(), item.getPrice());
+                System.out.println( item.getName() + "-----"+ item.getPrice());
             } else {
                 System.out.println("(Invalid order)");
             }
         }
-        System.out.printf("Total: $%.2f\n", total);
+        System.out.println( this.total);
     }
 
 }
