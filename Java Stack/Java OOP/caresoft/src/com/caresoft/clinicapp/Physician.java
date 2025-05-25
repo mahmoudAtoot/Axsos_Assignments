@@ -1,14 +1,29 @@
-package com.caresoft.clinicapp;
-
 import java.util.ArrayList;
 import java.util.Date;
 
 public class Physician extends User implements HIPAACompliantUser {
 	private ArrayList<String> patientNotes;
 	
-	// TO DO: Constructor that takes an IDcopy
+	// TO DO: Constructor that takes an ID
+    public Physician(Integer id) {
+        this.id=id;
+    }
     // TO DO: Implement HIPAACompliantUser!
-	
+	public boolean assignPin(int pin){
+        if(String.valueOf(pin).matches("\\d{4}")){//(\\d{4})
+            setPin(pin);
+            return true;
+        }
+        return false;
+    }
+
+    public boolean accessAuthorized(Integer confirmedAuthID){
+        if(getId() == confirmedAuthID){
+            return true;
+        }
+        return false;
+    }
+    
 	public void newPatientNotes(String notes, String patientName, Date date) {
         String report = String.format(
             "Datetime Submitted: %s \n", date);
