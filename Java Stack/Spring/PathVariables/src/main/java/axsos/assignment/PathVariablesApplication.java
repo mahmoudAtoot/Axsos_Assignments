@@ -6,6 +6,7 @@ import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 @SpringBootConfiguration
 @RestController
@@ -15,24 +16,21 @@ public class PathVariablesApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(PathVariablesApplication.class, args);
 	}
-	 @RequestMapping("/{FirstName}/{LastName}")
-	    public String welcome(@PathVariable("FirstName")String FirstName,@PathVariable("LastName")String LastName) {
-	    	if(FirstName != null) {
-	    		return "hello " + FirstName +" "+LastName;	    		
-	    	}
-	    	else {
-	    		return "hello human";
-	    	}
-	    }
-	    @RequestMapping("/bye/{FirstName}/{LastName}")
-	    public String Bye(@PathVariable("FirstName")String FirstName,@PathVariable("LastName")String LastName) {
-	    	if(FirstName != null) {
-	    		return "bye " + FirstName +" "+LastName;	    		
-	    	}
-	    	else {
-	    		return "bye human";
-	    	}
-	    }
+//	@RequestMapping("/")
+	public String index() {
+		return "Hellow Human";
+	}
+	@RequestMapping("/search")
+	public String name(@RequestParam(value="q",defaultValue = "hi") String searchQuery,@RequestParam(value="last" ,defaultValue = "") String lastname,@RequestParam(value="times" ,defaultValue = "1") int times) {
+		String result  = "";
+		for(int i = 0; i<times;i++) {
+		result += "Hello " + searchQuery+lastname;
+	}
+		return result;
+	}
+	
+	
+	
 	    @RequestMapping("/travel/{city}" )
 	    public String city(@PathVariable("city")String city){
 	      return "Congratulations! You will soon travel to "+city;
