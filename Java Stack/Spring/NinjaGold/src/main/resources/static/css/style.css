@@ -1,0 +1,42 @@
+@charset "UTF-8";
+body {
+    background: #f2f2f2;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #aaa;
+    width: 500px;
+}
+h1, h2 {
+    text-align: center;
+}
+.gold {
+    color: #DAA520;
+}
+.locations form {
+    margin: 10px 0;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 5px;
+}
+.reset {
+    background-color: crimson;
+    color: white;
+}
+.log {
+    margin-top: 20px;
+}
+.prison {
+    text-align: center;
+    background: #ffe6e6;
+    border: 2px solid #cc0000;
+}

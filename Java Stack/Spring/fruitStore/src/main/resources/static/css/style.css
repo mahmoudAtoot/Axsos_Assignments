@@ -1,0 +1,27 @@
+@charset "UTF-8";
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+h1 {
+    color: #ef8181;
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.orange {
+    color: orange;
+    font-weight: bold;
+}
