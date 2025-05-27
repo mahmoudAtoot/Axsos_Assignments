@@ -16,7 +16,7 @@ public class PathVariablesApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(PathVariablesApplication.class, args);
 	}
-//	@RequestMapping("/")
+	@RequestMapping("")
 	public String index() {
 		return "Hellow Human";
 	}
@@ -29,7 +29,7 @@ public class PathVariablesApplication {
 		return result;
 	}
 	
-	
+
 	
 	    @RequestMapping("/travel/{city}" )
 	    public String city(@PathVariable("city")String city){

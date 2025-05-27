@@ -1,0 +1,22 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  font-size: 2rem;
+  font-weight: bold;
+   margin-right: 100px;
+
+}
+
+p {
+  font-size: 2rem;
+  font-weight: bold;
+   margin-right: 100px;
+    color: blue;
+}
