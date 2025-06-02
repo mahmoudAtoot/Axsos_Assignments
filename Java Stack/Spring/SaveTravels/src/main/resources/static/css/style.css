@@ -126,3 +126,60 @@ input.button:hover {
   margin-top: -10px;
   margin-bottom: 10px;
 }
+
+/* Page: Expense Details */
+body.details {
+  background-color: #ecf0f1;
+  padding: 50px;
+}
+
+.details {
+  max-width: 600px;
+  margin: auto;
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.details h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.details .inputs {
+  margin-bottom: 20px;
+}
+
+.details .inputs p:first-child {
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.details .inputs p:last-child {
+  font-size: 16px;
+  color: #333;
+  background-color: #f8f9fa;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+/* Back Button */
+.go-back {
+  display: inline-block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  background-color: #3498db;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.go-back:hover {
+  background-color: #2980b9;
+}
+
