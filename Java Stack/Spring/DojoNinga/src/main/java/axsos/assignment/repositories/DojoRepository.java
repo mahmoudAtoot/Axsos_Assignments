@@ -18,9 +18,5 @@ public interface DojoRepository extends CrudRepository<Dojo, Long> {
 //	    Long countByTitleContaining(String search);
 //	    // this method deletes a book that starts with a specific title
 //	    Long deleteByTitleStartingWith(String search);
-}@Repository
-public interface DojoRepository extends CrudRepository<Dojo,Long>{
-    List<Dojo> findAll();
-
-
 }
+
