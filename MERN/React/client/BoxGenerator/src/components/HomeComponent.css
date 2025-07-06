@@ -1,0 +1,82 @@
+/* HomeComponent.css - Dark Glassy Style */
+
+body {
+  background-color: #121212;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 30px;
+}
+
+label {
+  font-weight: 600;
+  color: #cccccc;
+}
+
+input[type="text"],
+input[type="number"] {
+  padding: 10px 14px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border: 1px solid #66ccff;
+}
+
+button {
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #66ccff;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #33b5e5;
+}
+
+.boxes-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.color-box {
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.2s;
+}
+
+.color-box:hover {
+  transform: scale(1.08);
+  border-color: #66ccff;
+}
