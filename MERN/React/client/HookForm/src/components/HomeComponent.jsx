@@ -51,7 +51,7 @@ const HomeComponent = () => {
     const createUser = useCallback(
         (e) => {
             e.preventDefault();
-
+      
             const newErrors = {};
 
             if (firstname.trim().length < 3)
