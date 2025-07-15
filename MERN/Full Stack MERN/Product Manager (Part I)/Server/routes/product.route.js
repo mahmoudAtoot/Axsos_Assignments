@@ -1,14 +1,17 @@
-// const express = require('express');
-// const router = express.Router();
-require('../controllers/product.controller');
-const productController = require('../controllers/product.controller');
+const ProductController = require('../controllers/product.controller');
+
 
 
 module.exports = app => {
 
-app.post('/api/product', productController.createProduct);
+    app.get('/api/products/allproducts', ProductController.findAllProducts);
 
-app.get('/api' , productController.findAllProducts)
+    app.get('/api/products/:id', ProductController.findOneSingleProduct);
 
-module.exports = app;
+    app.patch('/api/products/:id', ProductController.updateExistingProduct);
+
+    app.post('/api/products', ProductController.createNewProduct);
+
+    app.delete('/api/products/:id', ProductController.deleteAnExistingProduct);
+    
 }

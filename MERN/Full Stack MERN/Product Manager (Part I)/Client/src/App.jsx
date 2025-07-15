@@ -1,11 +1,25 @@
-import React from 'react';
-import ProductForm from './components/ProductForm';
+import { useState } from 'react'
+import './App.css'
+import ProductForm from './components/functional/ProductForm'
+import ProductList from './components/functional/ProductList'
+import { Routes,Route } from 'react-router-dom'
+import ProductInfo from './components/functional/ProductInfo'
+import ProductEdit from './components/functional/ProductEdit'
 
-const App = () => (
-  <div>
-    <h1>Product Manager</h1>
-    <ProductForm />
-  </div>
-);
+function App() {
+  const [count, setCount] = useState(0)
 
-export default App;
+  
+  return (
+    <>
+    <Routes>
+      <Route index element={(<> <ProductForm/> <ProductList/> </>)} />
+      <Route path={"/products/:id"} element={<ProductInfo/>}/>
+      <Route path={"/products/:id/edit"} element={<ProductEdit/>}/>
+    </Routes>
+      
+    </>
+  )
+}
+
+export default App
