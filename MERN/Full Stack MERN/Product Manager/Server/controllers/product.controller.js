@@ -23,7 +23,8 @@ module.exports.findOneSingleProduct = (req, res) => {
 module.exports.createNewProduct = (req, res) => {
     Product.create(req.body)
         .then((newlyCreatedProduct) => {
-            res.json({ msg: "batata", product: newlyCreatedProduct });
+            res.json({ newlyCreatedProduct });
+            console.log(req)
         })
         .catch((err) => {
             res.status(400).json(err);

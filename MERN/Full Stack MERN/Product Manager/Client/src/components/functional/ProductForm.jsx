@@ -16,7 +16,7 @@ const ProductForm = () => {
         axios.post("http://localhost:8000/api/products", formData)
             .then(res => {
                 console.log(res.data.msg)
-                console.log(res.data.product)
+                console.log(res.data.product)   
             })
             .catch(err => {
                 console.log(err)

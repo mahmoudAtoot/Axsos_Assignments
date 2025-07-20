@@ -4,6 +4,8 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom"
 const ProductList = () => {
     const [data, setData] = useState([])
+
+
     useEffect(() => {
         axios.get("http://localhost:8000/api/products/allproducts")
             .then(res => {

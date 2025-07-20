@@ -6,7 +6,6 @@ const Home= () => {
     const [character, setCharacter] = useState(null)
     const [id, setId] = useState('')
     const [type, setType] = useState('')
-
     const getCharacter = (e) => {
         e.preventDefault()
         axios.get(`https://swapi.tech/api/${type}/${id}`)
@@ -26,11 +25,9 @@ const Home= () => {
                     <option value="people">people</option>
                 </select>
                 <button onClick={getCharacter}>get Character</button>
-
                 {character && (
                     <ul>
                         <li><strong>Name:</strong> {character.name}</li>
-
                         {type === "people" && (
                             <>
                                 <li><strong>Height:</strong> {character.height}</li>
@@ -39,7 +36,6 @@ const Home= () => {
                                 <li><strong>Birth Year:</strong> {character.birth_year}</li>
                             </>
                         )}
-
                         {type === "planets" && (
                             <>
                                 <li><strong>Climate:</strong> {character.climate}</li>
